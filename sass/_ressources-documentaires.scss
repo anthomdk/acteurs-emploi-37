@@ -1,0 +1,34 @@
+.ressources {
+    h2 {
+        @extend %h2;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    ul li a {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-left: 25px;
+        color: $liens;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            background-image: url("../svg/puce.svg");
+            width: 8px;
+            height: 8px;
+            top: 11px;
+            transform: translate(0, -50%);
+            left: -25px;
+        }
+    }
+}
+
+.all {
+    margin-bottom: 50px;
+}
+
+.ressources li {
+    list-style-type: none;
+}
+
+    

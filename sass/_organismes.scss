@@ -1,0 +1,36 @@
+.organisation {
+    h2 {
+        @extend %h2; 
+        position: relative;
+        margin-left: 25px;  
+        margin-bottom: 15px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../svg/puce.svg");
+            width: 8px;
+            height: 8px;
+            top: 48%;
+            transform: translate(0, -50%);
+            left: -25px;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-bottom: 15px;
+    }
+    li {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-left: 20px;
+    }
+}
+
+.organisation hr:last-of-type {
+    display: none;
+}
+
+
+
+

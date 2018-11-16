@@ -1,0 +1,504 @@
+.dd {
+    background-color: red;
+    width: 450px;
+    height: 44px;
+}
+
+
+@keyframes hinge {
+    0% {
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    20%,
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    40%,
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, 60deg);
+      transform: rotate3d(0, 0, 1, 60deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+  
+
+    60%,
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translate3d(0, 700px, 0);
+      transform: translate3d(0, 700px, 0);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .hinge {
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+    -webkit-animation-name: hinge;
+    animation-name: hinge;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* background-color: black; */
+    color: white;
+    overflow: hidden;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: medium;
+}
+
+body {
+    animation: backgroundChange 0s 2900ms  forwards;
+}
+
+@keyframes backgroundChange {
+   from {
+       background-color: white;
+   }
+
+   to {
+       background-color: black;
+   }
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.bdy {
+    margin-top: 40px;
+    margin-bottom: 7px;
+}
+
+.animated {
+    width: 100%;
+    height: auto;
+}
+
+.error {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: -350px;
+    right: 0;
+    -webkit-animation: noise-3 1s linear infinite;
+    animation: noise-3 1s linear infinite;
+    overflow: default;
+}
+
+.wrap,
+.error {
+    animation: appear 0s 2900ms forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.wrap:after {
+    content: 'erreur 404';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 35%;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-1 .3s linear infinite;
+    animation: noise-1 .3s linear infinite;
+}
+
+.wrap:before {
+    content: 'erreur 404';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 35%;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-2 .3s linear infinite;
+    animation: noise-2 .3s linear infinite;
+}
+
+.info {
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    position: absolute;
+    top: 280px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    -webkit-animation: noise-3 1s linear infinite;
+    animation: noise-3 1s linear infinite;
+}
+
+.error:before {
+    content: 'Page non trouvée';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    top: 270px;
+    bottom: 0;
+    left: 0;
+    right: -200px;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-2 .3s linear infinite;
+    animation: noise-2 .3s linear infinite;
+}
+
+.error:after {
+    content: 'Page non trouvée';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    top: 270px;
+    bottom: 0;
+    left: 0;
+    right: -200px;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-1 .3s linear infinite;
+    animation: noise-1 .3s linear infinite;
+}
+
+@-webkit-keyframes noise-1 {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .5;
+        left: -6px;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+        left: 2px;
+    }
+}
+
+@keyframes noise-1 {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .5;
+        left: -6px;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+        left: 2px;
+    }
+}
+
+@-webkit-keyframes noise-2 {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .5;
+        left: 6px;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+        left: -2px;
+    }
+}
+
+@keyframes noise-2 {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .5;
+        left: 6px;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+        left: -2px;
+    }
+}
+
+@-webkit-keyframes noise {
+
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    4.3% {
+        opacity: 1;
+        -webkit-transform: scaleY(1.7);
+        transform: scaleY(1.7);
+    }
+
+    43% {
+        opacity: 1;
+        -webkit-transform: scaleX(1.5);
+        transform: scaleX(1.5);
+    }
+}
+
+@keyframes noise {
+
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    4.3% {
+        opacity: 1;
+        -webkit-transform: scaleY(1.7);
+        transform: scaleY(1.7);
+    }
+
+    43% {
+        opacity: 1;
+        -webkit-transform: scaleX(1.5);
+        transform: scaleX(1.5);
+    }
+}
+
+@-webkit-keyframes noise-3 {
+
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    4.3% {
+        opacity: 1;
+        -webkit-transform: scaleY(4);
+        transform: scaleY(4);
+    }
+
+    43% {
+        opacity: 1;
+        -webkit-transform: scaleX(10) rotate(60deg);
+        transform: scaleX(10) rotate(60deg);
+    }
+}
+
+@keyframes noise-3 {
+
+    0%,
+    3%,
+    5%,
+    42%,
+    44%,
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+
+    4.3% {
+        opacity: 1;
+        -webkit-transform: scaleY(4);
+        transform: scaleY(4);
+    }
+
+    43% {
+        opacity: 1;
+        -webkit-transform: scaleX(10) rotate(60deg);
+        transform: scaleX(10) rotate(60deg);
+    }
+}
+
+.wrap {
+    top: 30%;
+    left: 25%;
+    height: 200px;
+    margin-top: -100px;
+    position: absolute;
+}
+
+code {
+    color: white;
+}
+
+span.blue {
+    color: #48beef;
+}
+
+span.comment {
+    color: #7f8c8d;
+}
+
+span.orange {
+    color: #f39c12;
+}
+
+span.green {
+    color: #33cc33;
+}
+
+.viewFull {
+    font-family: OCR-A;
+    color: orange;
+    text-decoration: none;
+}
+
+@media only screen and (min-height: 500px) {
+
+    .viewFull {
+        display: none;
+    }
+
+}

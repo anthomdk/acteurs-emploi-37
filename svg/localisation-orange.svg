@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="27px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>location-jaune-bord1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PostCard-Évenements-Copy-5" transform="translate(-19.000000, -13.000000)" fill="#FF8F03" fill-rule="nonzero" stroke="#333333" stroke-width="0.25">
+            <g id="location-jaune-bord1" transform="translate(20.000000, 14.000000)">
+                <path d="M9,0 C4.02985075,0 0,4.16528926 0,9.30247934 C0,14.9603306 7.45522388,25.2 9,25.2 C10.5447761,25.2 18,14.9603306 18,9.30247934 C18,4.16528926 13.9701493,0 9,0 Z M9,13.3636364 C6.85074627,13.3636364 5.1380597,11.5933884 5.1380597,9.37190083 C5.1380597,7.15041322 6.85074627,5.38016529 9,5.38016529 C11.1492537,5.38016529 12.8619403,7.15041322 12.8619403,9.37190083 C12.8619403,11.5933884 11.1492537,13.3636364 9,13.3636364 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

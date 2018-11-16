@@ -1,0 +1,56 @@
+.top-publication {
+    margin-bottom: 20px;
+    .publication-titre {
+        font-size: 1.8rem;
+        color: $txt-auteur;
+    }
+    .publication-auteur {
+        @extend %publication-auteur;
+        position: relative;
+        margin-left: 40px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../svg/client.svg");
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 5px;
+            left: -20px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $gris;
+    }
+}
+
+.publication-info {
+    h2 {
+        @extend %h2;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    .paraT2
+    {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    a {
+        color: $liens;
+        font-weight: 500;
+    }
+}
+
+.bottom-publication {
+    margin-bottom: 20px;
+}
+ 
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+

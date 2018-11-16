@@ -1,0 +1,194 @@
+
+@keyframes hinge {
+    0% {
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    20%,
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    40%,
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, 60deg);
+      transform: rotate3d(0, 0, 1, 60deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+  
+
+    60%,
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translate3d(0, 700px, 0);
+      transform: translate3d(0, 700px, 0);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .hinge {
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+    -webkit-animation-name: hinge;
+    animation-name: hinge;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+
+
+
+#error-container {
+    animation: backgroundChange 0s 2900ms  forwards;
+    font-family: 'Gilda Display', serif;
+    font-size: 16px;
+    font-weight: 600; 
+    color: white;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    color: #FFF;
+    
+}
+
+.errortop {
+    margin-top: 10%;
+    margin-left: 35%;
+    span {
+        color: #33cc33;
+    }
+    .htm,
+    .styl,
+    .bod {
+        color: #f39c12;
+    }
+    .acteuremp {
+        color: #33cc33;
+        span {
+            color: #48beef;
+        }
+        span:last-child {
+            color: #FFF;
+        }
+    }
+    .comment {
+        color:#7f8c8d;
+    }
+}
+
+.errortxt {
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+}
+
+.htm {
+    margin-left: 18px;
+}
+
+.styl,
+.bod {
+    margin-left: 30px;
+    &+p {
+        margin-left: 40px;
+    }
+}
+
+.acteuremp {
+    margin-left: 55px;
+    &+p {
+        margin-left: 42px;
+    }
+}
+
+.errortxt {
+    margin-left: 60px;
+    p:last-child {
+        margin-left: 25px
+    }
+}
+
+.comment {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    letter-spacing: .1rem;
+    margin-left: -10px;
+    p:last-child {
+        margin-left: 50px;
+    }
+}
+
+.doctyp:before {
+    content: 'erreur 404';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 35%;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-1 .3s linear infinite;
+    animation: noise-1 .3s linear infinite;
+}
+
+.doctyp:after {
+    content: 'erreur 404';
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    bottom: 0;
+    left: 0;
+    right: 35%;
+    opacity: 0;
+    color: white;
+    -webkit-animation: noise-2 .3s linear infinite;
+    animation: noise-2 .3s linear infinite;
+}
+
+
+@keyframes backgroundChange {
+   from {
+       background-color: white;
+   }
+
+   to {
+       background-color: black;
+   }
+}
+

@@ -1,0 +1,129 @@
+
+form.col-5 {
+    padding: 0;
+}
+
+.btn-full4 {
+    margin-bottom: 50px;
+}
+
+.structure-name {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: $txt-auteur;
+}
+
+.structure-content {
+    position: relative;
+    padding: 0 35px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    .vignette {
+        position: absolute;
+        border: 1px solid $border-shaddow;
+        box-shadow: 2px 2px 10px $border-shaddow;
+        top: 15px;
+        right: 100px;
+    }
+    .structure-type {
+        margin-top: 30px;
+    }
+    .structure-type,
+    .structure-activite,
+    .structure-description,
+    .structure-nom,
+    .structure-tel,
+    .structure-mailT,
+    .structure-mail,
+    .structure-siteinternetT,
+    .structure-siteinternet,
+    .structure-adresse,
+    .structure-codepostal,
+    .structure-ville,
+    .structure-pays {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        font-weight: 700;
+        color: $txtblack;
+        margin-bottom: 5px;
+        &:before {
+            display: none;
+        }
+    }
+    .structure-mail,
+    .structure-siteinternet {
+        font-weight: 500;
+        color: $liens;
+        display: inline-block;
+        margin: 0;
+    }
+    .structure-pays + p {
+    text-transform: uppercase;
+    }
+    .structure-pays + p {
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: $txt;
+        margin-bottom: 30px; 
+    }
+    hr {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .map p {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .map iframe {
+        width: 100%;
+        height: 400px;
+        margin: 0 0 10px;
+    }
+    .leaflet-map {
+        border-radius: 2px;
+        border: 1px solid $border-shaddow;
+        box-shadow: 2px 2px 10px $border-shaddow;
+    }
+    .agrandir {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.6rem;
+        color: $liens;
+        display: inline-block;
+        margin-bottom: 40px;
+        &:before {
+            display: none;
+        }
+    }
+    .structure-info {
+        border: 1px solid $border-shaddow;
+        background-color: #F5F5F5;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+        .info-auteur {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            margin-bottom: 10px;
+            span {
+                color: $txt-auteur;
+            }
+        }
+        .info-date {
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+            margin-bottom: 0px;
+        }
+    }
+}
